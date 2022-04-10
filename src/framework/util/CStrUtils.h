@@ -4,7 +4,7 @@
 extern "C" {
 #endif 
 
-#include "DataInspectorShared.h"
+#include "core/Shared.h"
 
 // Allocates a new wide string with malloc(), copies str into it, and returns
 // the copy. The returned string has to be explicitly deallocated with free().

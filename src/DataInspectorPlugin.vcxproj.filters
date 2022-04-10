@@ -7,50 +7,54 @@
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.c">
+    <ClCompile Include="framework\core\dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DataInspectorPluginServer.c">
+    <ClCompile Include="framework\core\Server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CStrUtils.c">
+    <ClCompile Include="framework\util\CStrUtils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Int32Converter.c">
+    <ClCompile Include="converters\Int32Converter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="register.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Interface\C\DataInspectorShared.h">
+    <ClInclude Include="framework\util\utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DataInspectorPluginServer.h">
+    <ClInclude Include="framework\util\CStrUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="utils.h">
+    <ClInclude Include="framework\core\PluginInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CStrUtils.h">
+    <ClInclude Include="framework\core\Server.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Int32Converter.h">
+    <ClInclude Include="framework\core\Shared.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Interface\C\DataInspectorPluginInterface.h">
+    <ClInclude Include="framework\util\StrUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DataInspectorPluginExample.def">
-      <Filter>Source Files</Filter>
-    </None>
+    <ClInclude Include="converters\Int32Converter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="converters\example.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
